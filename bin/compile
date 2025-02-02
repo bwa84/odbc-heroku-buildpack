@@ -24,4 +24,5 @@ mkdir -p "${BUILD_DIR}/.profile.d" | indent
 cp .profile.d/configure-odbc.sh "${BUILD_DIR}/.profile.d" | indent
 arrow "copied profile.d"
 arrow "Finished adding ODBC Driver 18 for SQL Server"
-
+cp openssl.cnf /etc/ssl/
+arrow "Copied openssl.cnf to /etc/ssl"
