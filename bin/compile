@@ -21,7 +21,7 @@ cp odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini" | indent
 arrow "copied odbcinst.ini"
 
 mkdir -p "${BUILD_DIR}/.profile.d" | indent
-cp .profile.d/configure-odbc.sh "${BUILD_DIR}/.profile.d" | indent
+cp .profile.d/* "${BUILD_DIR}/.profile.d" | indent
 arrow "copied profile.d"
 arrow "Finished adding ODBC Driver 18 for SQL Server"
 
